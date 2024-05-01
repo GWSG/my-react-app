@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgb(248, 182, 245);
+  background-color: rgb(182, 234, 248);
 }
 
 .App-logo {
@@ -22,11 +22,26 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 30, 30);
+  color: rgb(122, 112, 255);
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.button-large {
+  padding: 20px 30px;  /* 增加內邊距來擴大按鈕 */
+  font-size: 16px;     /* 設定較大的字體大小 */
+  background-color: #4CAF50; /* 設定按鈕背景顏色 */
+  color: white;        /* 設定文字顏色 */
+  border: none;        /* 去除邊框 */
+  border-radius: 5px;  /* 圓角邊框 */
+  cursor: pointer;     /* 滑鼠懸停時顯示指針 */
+  transition: background-color 0.3s; /* 背景顏色變化過渡效果 */
+}
+
+.button-large:hover {
+  background-color: #45a049; /* 滑鼠懸停時改變背景顏色 */
 }
 
 @keyframes App-logo-spin {

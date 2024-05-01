@@ -30,7 +30,7 @@ function App() {
 
       {/* </header> */}
       {/* 新增按鈕 */}
-      <button onClick={handleClick}>Button</button>
+      <button onClick={handleClick} className="button-large">Button</button>
     </div>
   );
 }
