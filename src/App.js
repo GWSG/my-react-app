@@ -6,7 +6,7 @@ import MySlider from "./MySlider";
 function App() {
 
   const handleClick = () => {
-    alert('HELLO');
+    alert('HELLO，我是學號：5B0G0042，姓名：許皓詠');
   }
 
   return (
@@ -30,7 +30,7 @@ function App() {
 
       {/* </header> */}
       {/* 新增按鈕 */}
-      <button onClick={handleClick}>顯示訊息</button>
+      <button onClick={handleClick}>Button</button>
     </div>
   );
 }
