@@ -4,6 +4,11 @@ import MySlider from "./MySlider";
 
 
 function App() {
+
+  const handleClick = () => {
+    alert('HELLO');
+  }
+
   return (
     <div className="App">
       <h1>Javascript程式設計，學號5B0G0042，姓名:許皓詠</h1>
@@ -24,14 +29,8 @@ function App() {
         </a> */}
 
       {/* </header> */}
-      <div>
-        <span>亮度: </span>
-        <MySlider min={0} max={100} defaultValue={50} />
-      </div>
-      <div>
-        <span>透明度: </span>
-        <MySlider min={0} max={1} step={0.01} defaultValue={0.5} />
-      </div>
+      {/* 新增按鈕 */}
+      <button onClick={handleClick}>顯示訊息</button>
     </div>
   );
 }
