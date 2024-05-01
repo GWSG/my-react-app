@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import logo from "./logo.svg"; // 如果需要顯示 logo，可以取消這部分的註解
+import logo from "./logo.svg";
 import "./App.css";
 import MySlider from "./MySlider";
+
 
 function App() {
   return (
@@ -25,26 +24,16 @@ function App() {
         </a> */}
 
       {/* </header> */}
+      <div>
+        <span>亮度: </span>
+        <MySlider min={0} max={100} defaultValue={50} />
+      </div>
+      <div>
+        <span>透明度: </span>
+        <MySlider min={0} max={1} step={0.01} defaultValue={0.5} />
+      </div>
     </div>
   );
 }
-
-function Football() {
-  const shoot = () => {
-    alert("Great Shot!");
-  }
-
-  return (
-    <button onClick={shoot}>Take the shot!</button>
-  );
-}
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-    <Football />
-  </React.StrictMode>
-);
 
 export default App;
