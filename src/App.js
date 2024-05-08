@@ -8,7 +8,7 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Javascript程式設計，使用react</h1>
+      <h1>學號：5B00G0042，姓名：許皓詠</h1>
       <h2>第一個元件</h2>
       <MyRGBPanel />
       <h2>第二個元件</h2>

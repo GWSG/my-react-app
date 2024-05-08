@@ -11,8 +11,14 @@ function MyRGBPanel() {
     const updateG = (v) => setG(v);
     const updateB = (v) => setB(v);
 
+    // 計算文字顏色
+    const getTextColor = (r, g, b) => {
+        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        return brightness > 125 ? "black" : "white";
+    };
+
     const rgbCss = {
-        border: "10px solid blue",
+        border: `10px solid rgb(${r}, ${g}, ${b})`, // 設定邊框顏色為動態 RGB 值
         borderRadius: "20px",
         width: "300px",
         display: "flex",
@@ -21,31 +27,30 @@ function MyRGBPanel() {
         justifyContent: "center",
         alignItems: "center",
         margin: "auto",
-      };
-  return (
-    <>
-      <div
-        style={rgbCss}
-      >
-        <h2 style={{color:`rgb(${r}, ${g}, ${b})`}}>
-          目前色彩
-        </h2>
-        <div
-          style={{
-            width: "250px",
-            height: "100px",
-            backgroundColor: `rgb(${r}, ${g}, ${b})`,
-          }}
-        />
-        <span>R: </span>
-        <MySlider onChange={updateR} />
-        <span>G: </span>
-        <MySlider onChange={updateG} />
-        <span>B: </span>
-        <MySlider onChange={updateB} />
-      </div>
-    </>
-  );
+    };
+
+    return (
+        <>
+            <div style={rgbCss}>
+                <h2 style={{ color: getTextColor(r, g, b) }}>
+                    目前色彩
+                </h2>
+                <div
+                    style={{
+                        width: "250px",
+                        height: "100px",
+                        backgroundColor: `rgb(${r}, ${g}, ${b})`,
+                    }}
+                />
+                <span>R: </span>
+                <MySlider value={r} onChange={updateR} />
+                <span>G: </span>
+                <MySlider value={g} onChange={updateG} />
+                <span>B: </span>
+                <MySlider value={b} onChange={updateB} />
+            </div>
+        </>
+    );
 }
 
 export default MyRGBPanel;
