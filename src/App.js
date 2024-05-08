@@ -4,7 +4,7 @@ import MyRGBPanel from "./components/MyRGBPanel";
 function App() {
  // 點擊事件處理函數，彈出訊息框
   const handleClick = () => {
-    alert("不要亂按！");
+    alert("請不要亂按！");
   };
   return (
     <div className="App">
