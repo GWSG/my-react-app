@@ -2,17 +2,17 @@ import "./App.css";
 import MyRGBPanel from "./components/MyRGBPanel";
 
 function App() {
-  // 點擊事件處理函數
+ // 點擊事件處理函數，彈出訊息框
   const handleClick = () => {
-    console.log("按鈕被點擊了！");
+    alert("不要亂按！");
   };
-
   return (
     <div className="App">
       <h1>Javascript程式設計，使用react</h1>
       <h2>第一個元件</h2>
       <MyRGBPanel />
-      <button onClick={handleClick} className="button-large">Button</button>
+      <h2>第二個元件</h2>
+      <button onClick={handleClick} className="button-large">緊急按鈕</button>
     </div>
   );
 }

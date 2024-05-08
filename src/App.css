@@ -32,7 +32,7 @@
 .button-large {
   padding: 20px 30px;  /* 增加內邊距來擴大按鈕 */
   font-size: 16px;     /* 設定較大的字體大小 */
-  background-color: #182ffb; /* 設定按鈕背景顏色 */
+  background-color: #ff312a; /* 設定按鈕背景顏色 */
   color: white;        /* 設定文字顏色 */
   border: none;        /* 去除邊框 */
   border-radius: 5px;  /* 圓角邊框 */
