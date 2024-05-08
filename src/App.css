@@ -31,11 +31,11 @@
 
 .button-large {
   padding: 20px 30px;  /* 增加內邊距來擴大按鈕 */
-  font-size: 16px;     /* 設定較大的字體大小 */
+  font-size: 25px;     /* 設定較大的字體大小 */
   background-color: #ff312a; /* 設定按鈕背景顏色 */
-  color: white;        /* 設定文字顏色 */
+  color: rgb(0, 0, 0);        /* 設定文字顏色 */
   border: none;        /* 去除邊框 */
-  border-radius: 5px;  /* 圓角邊框 */
+  border-radius: 20px;  /* 圓角邊框 */
   cursor: pointer;     /* 滑鼠懸停時顯示指針 */
   transition: background-color 0.3s; /* 背景顏色變化過渡效果 */
 }
