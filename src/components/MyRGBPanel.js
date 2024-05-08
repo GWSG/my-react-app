@@ -11,11 +11,7 @@ function MyRGBPanel() {
     const updateG = (v) => setG(v);
     const updateB = (v) => setB(v);
 
-    // 計算文字顏色
-    const getTextColor = (r, g, b) => {
-        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-        return brightness > 125 ? "black" : "white";
-    };
+    
 
     const rgbCss = {
         border: `10px solid rgb(${r}, ${g}, ${b})`, // 設定邊框顏色為動態 RGB 值
@@ -32,7 +28,7 @@ function MyRGBPanel() {
     return (
         <>
             <div style={rgbCss}>
-                <h2 style={{ color: getTextColor(r, g, b) }}>
+                <h2 style={{ color:`rgb(${r}, ${g}, ${b})`}}>
                     目前色彩
                 </h2>
                 <div
