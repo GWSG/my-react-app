@@ -13,6 +13,8 @@ function App() {
       <MyRGBPanel />
       <h2>第二個元件</h2>
       <button onClick={handleClick} className="button-large">緊急按鈕</button>
+      <h1>MyCalculator</h1>
+      <MyCalculator />
     </div>
   );
 }
