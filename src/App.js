@@ -4,6 +4,7 @@ import MySlider from "./components/MySlider";
 import MyCalculator from "./components/MyCalculator";
 function App() {
  // 點擊事件處理函數，彈出訊息框
+ //MyCalculator是計算機事件
   const handleClick = () => {
     alert("請不要亂按！");
   };
@@ -18,7 +19,8 @@ function App() {
       <h1>MySlider</h1>
       <MySlider />
   
-      <h1>MyCalculator</h1>
+      <h1>MyCalculator</h1>  
+       
       <MyCalculator />
     </div>
   );
