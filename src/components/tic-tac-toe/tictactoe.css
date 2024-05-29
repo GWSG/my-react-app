@@ -14,14 +14,14 @@
 }
 
 .square:hover {
-    background-color: rgb(20, 20, 255);
-    color: white;
+    background-color: rgb(20, 255, 51);
+    color: rgb(247, 255, 3);
 }
 
 .game {
     width: 400px;
     margin: auto;
-    border: 3px solid blue;
+    border: 3px solid rgb(255, 0, 200);
     border-radius: 20px;
     padding: 20px;
     display: flex;
