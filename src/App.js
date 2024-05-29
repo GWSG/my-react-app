@@ -22,8 +22,7 @@ function App() {
       <h1>MyCalculator</h1>  
        
       <MyCalculator />
-      <h1>Tic-Tac-Toe Game</h1>
-      <TicTacToe />
+      
     </div>
   );
 }
