@@ -2,7 +2,7 @@
     background-color: white;
     width: 50px;
     height: 50px;
-    border: 1px solid grey;
+    border: 1px solid rgb(0, 0, 0);
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
@@ -30,7 +30,7 @@
 }
 
 .game-board {
-    background-color: gainsboro;
+    background-color: rgb(166, 0, 255);
     padding: 10px;
     border-radius: 10px;
     border: 1px solid black;
