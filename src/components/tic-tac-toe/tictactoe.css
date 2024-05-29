@@ -14,7 +14,7 @@
 }
 
 .square:hover {
-    background-color: deeppink;
+    background-color: rgb(20, 20, 255);
     color: white;
 }
 
