@@ -2,6 +2,7 @@ import "./App.css";
 import MyRGBPanel from "./components/MyRGBPanel";
 import MySlider from "./components/MySlider";
 import MyCalculator from "./components/MyCalculator";
+import TicTacToe from "./components/tic-tac-toe/TicTacToe";
 function App() {
  // 點擊事件處理函數，彈出訊息框
  //MyCalculator是計算機事件
@@ -22,6 +23,8 @@ function App() {
       <h1>MyCalculator</h1>  
        
       <MyCalculator />
+      <h1>Tic-Tac-Toe Game</h1>
+      <TicTacToe />
       
     </div>
   );
