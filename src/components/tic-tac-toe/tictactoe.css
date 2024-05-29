@@ -30,10 +30,10 @@
 }
 
 .game-board {
-    background-color: rgb(166, 0, 255);
+    background-color: rgb(118, 118, 118);
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 5px solid black;
 }
 
 .board-row:after {
