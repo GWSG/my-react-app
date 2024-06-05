@@ -26,6 +26,7 @@ function Board({ xIsNext, squares, onPlay }) {
       [2, 5, 8],
       [0, 4, 8],
       [2, 4, 6],
+      [2, 4, 6]
     ];
     for (let i = 0; i < lines.length - 1; i++) {
       const [a, b, c] = lines[i];
