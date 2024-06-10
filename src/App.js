@@ -1,8 +1,9 @@
 import "./App.css";
-import MyRGBPanel from "./components/MyRGBPanel";
-import MySlider from "./components/MySlider";
-import MyCalculator from "./components/MyCalculator";
+import MyRGBPanel from "./components/rgb-panel/MyRGBPanel"
+import MySlider from "./components/rgb-panel/MySlider";
+import MyCalculator from "./components/calculator/MyCalculator";
 import TicTacToe from "./components/tic-tac-toe/TicTacToe";
+
 function App() {
  // 點擊事件處理函數，彈出訊息框
  //MyCalculator是計算機事件
