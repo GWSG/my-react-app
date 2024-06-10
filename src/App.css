@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgb(182, 234, 248);
+  background-color: rgb(182, 234, 248);  /* 調整內圍的背景顏色 */
 }
 
 .App-logo {
@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: blueviolet;
+  background-color: blueviolet;  /* 調整外圍的背景顏色 */
   min-height: 50vh;
   display: flex;
   flex-direction: column;
