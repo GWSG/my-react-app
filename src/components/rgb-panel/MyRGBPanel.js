@@ -3,13 +3,13 @@ import { useState } from "react"; //紀錄每一個滑軌所移動的值
 import MySlider from "./MySlider"; //引用MySlider.js
 
 function MyRGBPanel() {
-    const [r, setR] = useState(128);
+    const [r, setR] = useState(128);//有一個變數是r
     const [g, setG] = useState(128);
     const [b, setB] = useState(128);
 
-    const updateR = (v) => setR(v);
-    const updateG = (v) => setG(v);
-    const updateB = (v) => setB(v);
+    const updateR = (v) => setR(v); //傳R的值到setR
+    const updateG = (v) => setG(v); //傳G的值到setG
+    const updateB = (v) => setB(v); //傳B的值到setB
 
     
 
