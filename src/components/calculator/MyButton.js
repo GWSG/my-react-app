@@ -1,5 +1,5 @@
-import React from "react";
-import "./MyCalculator.css";
+import React from "react";   // 從 React 庫中引入 React 對象
+import "./MyCalculator.css"; //引入MyCalculator.css檔
 
 // 定義 MyButton 組件
 function MyButton(props) {
