@@ -9,7 +9,7 @@
 }
 
 .board {
-    display: inline-block;
+    display: inline-block; /* 可以讓每一個按鈕用inline的方式排列成一排,然後看會排列成幾行 */
     margin: 10px;
 }
 
