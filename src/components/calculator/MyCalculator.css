@@ -31,8 +31,8 @@
     border-radius: 50%;
     outline: none;
     border: 0px;
-    padding: 5%;
-    margin: 5px;
+    padding: 5%; 
+    margin: 5px;  /* 每一排按鈕的相隔距離,避免讓他們全都連在一起 */
     cursor: pointer;
 }
 
@@ -45,9 +45,9 @@
     background-color: rgb(114, 186, 253);
 }
 
-.btn-0 {
+.btn-0 { /* 數字按鈕0的css規則 */
     width: 130px;
-    border-radius: 30px;
+    border-radius: 30px; /* 設置按鈕的邊框圓角半徑為30像素,因為如果調跟其他按鈕一樣會變成橢圓形*/
 }
 
 .btn:hover{
