@@ -1,11 +1,13 @@
 import React from "react";   // 從 React 庫中引入 React 對象
 import "./MyCalculator.css"; //引入MyCalculator.css檔
 
+//MyCalculator只負責按鈕按下去要回傳值就好了
+
 // 定義 MyButton 組件
 function MyButton(props) {
     // 定義點擊事件處理函數
     const handelClick = (e) => {
-        props.buttonClicked(e.target.value); // 呼叫 props 傳入的 buttonClicked 函數並傳入按鈕的值
+        props.buttonClicked(e.target.value); // handleClick會回傳到這邊,並告訴這個值是什麼東西,值就是下面的value
     }
 
     // 返回按鈕佈局
