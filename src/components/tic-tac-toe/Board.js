@@ -9,7 +9,10 @@ function Board({ xIsNext, squares, onPlay }) {
       return;
     }
     const nextSquares = squares.slice();
+    //這一段就是複製或保留一份目前按下去這個格子的值,然後轉換成看當下是先顯示X還是O
+
     if (xIsNext) {
+      //意思就是我按下去的格子不是X就是O阿
       nextSquares[i] = "X";
     } else {
       nextSquares[i] = "O";

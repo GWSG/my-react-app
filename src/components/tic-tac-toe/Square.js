@@ -3,7 +3,7 @@ import "./tictactoe.css"; //引用tictactoe.css
 
 function Square({ value, onSquareClick }) { 
   //Square會回傳的就是那九個格子,然後接受兩個參數的值
-  //value則是要傳圈圈叉叉的當下是按下哪一個格子
+  //value要傳的是現在是按下哪一個格子
   //第二個則是當Square被按下去的時候,要做什麼事情
   return (
     <button className="square" onClick={onSquareClick}> 
