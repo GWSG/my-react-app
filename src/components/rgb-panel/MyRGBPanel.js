@@ -32,7 +32,8 @@ const rgbCss = {
               {/* 顯示外圍方框的背景色 */}
             <div style={rgbCss}>
                 {/* 顯示目前色彩 */}
-                <h2 style={{ color:`rgb(${r}, ${g}, ${b})`}}> {/* 會隨著改變r,g,b這三的變數的數值,這個方框也會跟著變色 */}
+                <h2 style={{ color:`rgb(${r}, ${g}, ${b})`}}> 
+                    {/* 會隨著改變r,g,b這三的變數的數值,這個方框也會跟著變色 */}
                     目前色彩
                 </h2>
 
@@ -41,11 +42,13 @@ const rgbCss = {
                     style={{
                         width: "250px", //寬度
                         height: "100px",//高度
-                        backgroundColor: `rgb(${r}, ${g}, ${b})`,//會隨著改變r,g,b這三的變數的數值,這個方塊也會跟著變色
+                        backgroundColor: `rgb(${r}, ${g}, ${b})`,
+                        //會隨著改變r,g,b這三的變數的數值,這個方塊也會跟著變色
                     }}
                 />
                 <span>R: </span> {/* span是顯示在網頁上的字體 */} 
-                <MySlider value={r} onChange={updateR} />{/* value是顯示在網頁上滑軌移動的數值,如果有移動的話就呼叫updateR */}
+                <MySlider value={r} onChange={updateR} />
+                {/* value是顯示在網頁上滑軌移動的數值,如果有移動的話就呼叫updateR */}
                 <span>G: </span>
                 <MySlider value={g} onChange={updateG} />
                 <span>B: </span>
@@ -55,4 +58,5 @@ const rgbCss = {
     );
 }
 
-export default MyRGBPanel;//將 MyRGBPanel 元件匯出，以便在 index.js 中使用。
+export default MyRGBPanel;
+//將 MyRGBPanel 元件匯出，以便在 index.js 中使用。

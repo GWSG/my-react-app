@@ -4,8 +4,8 @@
     height: 50px;
     border: 1px solid grey;
     font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
+    font-weight: bold; /* 粗體格式 */
+    cursor: pointer;  /*設定了文字的字型大小 */
     line-height: 50px;
     margin: auto;
     float: left;
@@ -21,16 +21,16 @@
 .game {
     width: 400px;
     margin: auto;
-    border: 3px solid blue;
-    border-radius: 20px;
+    border: 3px solid rgb(255, 0, 0);  /*圓框的顏色 */
+    border-radius: 20px;  /*圓框*/
     padding: 20px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; /*裡面的東西向中對其*/
 }
 
 .game-board {
-    background-color: gainsboro;
+    background-color: rgb(106, 255, 37);   /*包住圈圈叉叉的方塊*/
     padding: 10px;
     border-radius: 10px;
     border: 1px solid black;

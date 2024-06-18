@@ -10,7 +10,8 @@ function MyCalculator() {
   // handleClick是MyButton的事件處理常式
   const handleClick = (value) => {
     // alert(value);
-    switch (value) { //依照value收到的值來做下面的運算
+    switch (value) { 
+      //依照value收到的值來做下面的運算
       case "0"://這邊的case是按下去後會回傳什麼值
       case "1":
       case "2":
@@ -27,7 +28,8 @@ function MyCalculator() {
       case "*":
       case "/":
         if (result === "0") {
-          setResult(value);//如果原來初始值是0,要按下=後才會開始運算
+          //如果原來初始值是0,要按下=後才會開始運算
+          setResult(value);
         } else {
           setResult(result + value);
         }

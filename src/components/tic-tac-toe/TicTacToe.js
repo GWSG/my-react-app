@@ -4,9 +4,13 @@ import "./tictactoe.css";
 
 function TicTacToe() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
+  //顯示歷程記錄,因為是九個格子,所以元素填九
+
   const [currentMove, setCurrentMove] = useState(0);
   const currentSquares = history[currentMove];
   const xIsNext = currentMove % 2 === 0;
+  //xIsNext判斷現在是輪到哪個玩家玩
+  //如果是'024就換到X玩,如果是135就是O玩,數字的意思是次數,第1次,第2次這樣
 
   const handlePlay = (nextSquares) => {
     const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];

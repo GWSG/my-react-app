@@ -4,6 +4,7 @@ import "./tictactoe.css";
 
 function Board({ xIsNext, squares, onPlay }) {
   const handleClick = (i) => {
+    //然後這邊的handleClick的i就會收到被按下格子的值
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
@@ -38,6 +39,9 @@ function Board({ xIsNext, squares, onPlay }) {
 
   const winner = calculateWinner(squares);
   let status = winner ? `贏家: ${winner}` : `下一個玩家: ${xIsNext ? "X" : "O"}`;
+  //每一次都會先從X開始,再來才是O
+
+
   // let status;
   // if (winner) {
   //   status = "贏家 " + winner;
@@ -49,19 +53,28 @@ function Board({ xIsNext, squares, onPlay }) {
     <>
       <div className="status">{status}</div>
       <div>
-        <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
-        <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
-        <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
+        <Square value={squares[0]} onSquareClick={() => handleClick(0)} /> 
+          {/* 當按下去的時候handleClick(0)函式,會觸發,同時value的值給<Square> */}
+        <Square value={squares[1]} onSquareClick={() => handleClick(1)} /> 
+          {/* 當按下去的時候handleClick(1)函式,會觸發,同時value的值給<Square> */}
+        <Square value={squares[2]} onSquareClick={() => handleClick(2)} /> 
+          {/* 當按下去的時候handleClick(2)函式,會觸發,同時value的值給<Square> */}
       </div>
       <div>
-        <Square value={squares[3]} onSquareClick={() => handleClick(3)} />
-        <Square value={squares[4]} onSquareClick={() => handleClick(4)} />
-        <Square value={squares[5]} onSquareClick={() => handleClick(5)} />
+        <Square value={squares[3]} onSquareClick={() => handleClick(3)} /> 
+          {/* 當按下去的時候handleClick(3)函式,會觸發,同時value的值給<Square> */}
+        <Square value={squares[4]} onSquareClick={() => handleClick(4)} /> 
+          {/* 當按下去的時候handleClick(4)函式,會觸發,同時value的值給<Square> */}
+        <Square value={squares[5]} onSquareClick={() => handleClick(5)} /> 
+          {/* 當按下去的時候handleClick(5)函式,會觸發,同時value的值給<Square> */}
       </div>
       <div>
-        <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
-        <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
-        <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
+        <Square value={squares[6]} onSquareClick={() => handleClick(6)} /> 
+          {/* 當按下去的時候handleClick(6)函式,會觸發,同時value的值給<Square> */}
+        <Square value={squares[7]} onSquareClick={() => handleClick(7)} /> 
+          {/* 當按下去的時候handleClick(7)函式,會觸發,同時value的值給<Square> */}
+        <Square value={squares[8]} onSquareClick={() => handleClick(8)} /> 
+          {/* 當按下去的時候handleClick(8)函式,會觸發,同時value的值給<Square> */}
       </div>
     </>
   );

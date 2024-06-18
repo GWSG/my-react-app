@@ -7,7 +7,8 @@ import "./MyCalculator.css"; //引入MyCalculator.css檔
 function MyButton(props) {
     // 定義點擊事件處理函數
     const handelClick = (e) => {
-        props.buttonClicked(e.target.value); // handleClick會回傳到這邊,並告訴這個值是什麼東西,值就是下面的value
+        props.buttonClicked(e.target.value); 
+        // handleClick會回傳到這邊,並告訴這個值是什麼東西,值就是下面的value
     }
 
     // 返回按鈕佈局
