@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-.square:hover {
+.square:hover { /*這段是當滑鼠移過去格子的時候會先讓格子變色 */
     background-color: deeppink;
     color: white;
 }
